@@ -108,3 +108,14 @@ API Gateway configured to allow POST requests only
 Lambda uses IAM Role to access DynamoDB
 
 CORS enabled in API Gateway
+ Elastic IP Configuration
+
+To ensure that the quiz application remains accessible even after restarting the EC2 instance, an **Elastic IP address** was allocated and associated with the EC2 instance.
+
+An Elastic IP provides a **static public IP address**, which prevents the application URL from changing when the instance is stopped and started.
+
+Elastic IP used for the application:
+
+http://13.63.151.189/
+
+This allows users to consistently access the quiz application without any interruption.
